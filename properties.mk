@@ -173,8 +173,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.kb_pad_port_b=1
 
 # Graphics
-ro.hardware.egl=adreno
-ro.hardware.vulkan=adreno
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=sdm660
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
