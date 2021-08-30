@@ -266,3 +266,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.zram.mark_idle_delay_mins=60 \
     ro.zram.first_wb_delay_mins=1440 \
     ro.zram.periodic_wb_delay_hours=24
+
+#enable signal cheating
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.oem_smooth=1
+
+#Property to enable touch optimizations
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.qti.inputopts.enable=true \
+    persist.vendor.qti.inputopts.movetouchslop=0.5
