@@ -358,7 +358,9 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
-    vendor.qti.hardware.perf@2.0.vendor
+    vendor.qti.hardware.perf@2.0.vendor \
+    android.hardware.power.stats@1.0-service.mock
+
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
