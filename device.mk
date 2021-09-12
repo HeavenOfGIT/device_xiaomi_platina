@@ -25,7 +25,6 @@ DEVICE_PATH := device/xiaomi/platina
 
 # Inherit properties
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
-PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
