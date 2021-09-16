@@ -23,9 +23,6 @@
 
 DEVICE_PATH := device/xiaomi/platina
 
-# Inherit properties
-$(call inherit-product, $(DEVICE_PATH)/properties.mk)
-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
@@ -231,12 +228,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.va_aosp.support=1
-
-PRODUCT_ODM_PROPERTIES += \
-    ro.vendor.qti.va_odm.support=1
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \

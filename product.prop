@@ -1,0 +1,41 @@
+# Charger
+ro.charger.disable_init_blank=true
+ro.charger.enable_suspend=true
+
+# LMKD
+ro.config.low_ram=false
+ro.lmk.use_psi=false
+ro.lmk.log_stats=true
+
+# Dex
+dalvik.vm.dex2oat64.enabled=true
+ro.vendor.qti.am.reschedule_service=true
+ro.sys.fw.dex2oat_thread_count=8
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.dex2oat-filter=quicken
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.image-dex2oat-filter=quicken
+dalvik.vm.image-dex2oat-threads=8
+
+# Media
+ro.media.recorder-max-base-layer-fps=60
+
+# GMS
+ro.com.google.ime.kb_pad_port_b=1
+
+# Graphics
+ro.hardware.egl=adreno
+ro.hardware.vulkan=sdm660
+
+# System Restart
+ro.build.shutdown_timeout=2
+
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=1440
+ro.zram.periodic_wb_delay_hours=24
+
+# IORap app launch prefetching using Perfetto traces and madvise
+ro.iorapd.enable=true
